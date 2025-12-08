@@ -1,0 +1,159 @@
+p.description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.quote-box p {
+  font-size: 20px;
+}
+.quote-box .quote-text {
+    font-style: italic;
+}
+#header .navbar .container {
+  justify-content: space-between;
+}
+
+.hero {
+  display: flex;
+  background: #1c1c21;
+  background-size: cover;
+  align-items: flex-end;
+  height: calc(100vh - 220px);
+}
+
+.hero-content {
+  padding-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  color: white;
+}
+
+.hero-mobile .hero-content {
+  position: absolute;
+  background: linear-gradient(3deg, black 15%, rgba(0,0,0,.4) 50%, transparent);
+}
+
+.hero.hero-mobile {
+  height: auto;
+}
+
+.show-mobile {
+  display: flex;
+}
+
+.hide-mobile {
+  display: none !important;
+}
+
+.hero.show-mobile {
+  height: auto !important;
+}
+
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+
+
+@media (min-width: 768px) {
+
+  p.description {
+    font-size: 21px
+  }
+
+  .quote-box p {
+    font-size: 24px;
+  }
+  .quote-box .quote-text {
+    font-size: 28px
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+    color: white;
+  }
+
+}
+
+@media (min-width: 1100px) {
+
+  p.description {
+    font-size: 24px
+  }
+
+  .quote-box p {
+    font-size: 24px;
+  }
+  .quote-box .quote-text {
+    font-size: 32px
+  }
+
+  .hero-content h1 {
+    font-size: 54px;
+    color: white;
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  .hero {
+    display: flex;
+    background: #1c1c21;
+    background-size: cover;
+    align-items: flex-end;
+    height: calc(100vh - 80px);
+  }
+
+  #header .navbar-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 120px;
+      width: 300px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  }
+
+  #header .navbar-nav {
+      margin-right: 100px;
+  }
+
+  #header .navbar-header:after {
+      content: '';
+      position: absolute;
+      background:transparent;
+      border: 60px solid white;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      left: 100%;
+  }
+
+  #header .navbar-brand img {
+      max-height: 100px;
+      padding-left: 35px;
+      padding-bottom: 5px;
+  }
+  
+  .show-mobile {
+      display: none;
+  }
+  
+  .hide-mobile {
+      display: flex !important;
+  }
+}
+
+
+@media only screen and (min-width: 1280px) {
+  .hero-content.container {
+      max-width: 100% !important;
+      padding-left: 80px
+  }
+}
