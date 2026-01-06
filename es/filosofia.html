@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from www.globalincomefundltd.com/es/nosotros by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Dec 2025 19:40:45 GMT -->
+<!-- Mirrored from www.globalincomefundltd.com/es/filosofia by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Dec 2025 19:42:09 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
@@ -99,6 +99,59 @@
                             .lang-select div:hover {
                                 background: orange !important;
                             }
+
+                            .list-item {
+                                width: 100%;
+                                height: 160px;
+                                box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+                                border-radius: 2px;
+                                padding: 25px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                            }
+
+                            .list-item .list-item-tooltip {
+                                display: none;
+                                position: absolute;
+                                background: #3f465f;
+                                color: white;
+                                top: 80%;
+                                text-align: center;
+                                min-height: 100px;
+                                min-width: 320px;
+                                padding: 30px;
+                                border-radius: 2px;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+                                opacity: 1;
+                                z-index: 999;
+                            }
+
+                            .list-item .list-item-tooltip:after {
+                                content: '';
+                                position: absolute;
+                                border: 14px solid transparent;
+                                border-color: transparent transparent #3f465f;
+                                transform: translateX(-50%);
+                                top: -28px;
+                                left: 50%;
+                                width: 0;
+                                height: 0;
+                            }
+
+                            .list-item .list-item-tooltip h2 {
+                                font-size: 20px;
+                            }
+
+                            .list-item .list-item-tooltip p {
+                                margin-bottom: .4rem;
+                            }
+
+                            .list-item:hover .list-item-tooltip {
+                                display: flex;
+                                flex-direction: column;
+                            }
                         </style>
                         <div
                             style="background: #39405c; height: 82px; padding: 10px; display: flex; align-items: center;">
@@ -109,7 +162,7 @@
                                 </div>
                                 <div
                                     style="display: none; position: absolute;align-items: center;  justify-content: center;z-index: 99999; background: #39405c; border-radius: 2px; padding: 10px 35px 10px 15px; ">
-                                    <a href='../about.html'><img src="../images/flag-us.png" alt=""
+                                    <a href='../philosophy.html'><img src="../images/flag-us.png" alt=""
                                             style="width: 45px; height: 27px"></a>
                                 </div>
                             </div>
@@ -126,13 +179,13 @@
     <!-- end header area -->
     <main>
         <div class="headerspace-small"></div>
+
         <div id="hero" class="hero"
-            style="background: linear-gradient(10deg, #1c1c21 4%, rgba(0,0,0, .85) 12%, rgba(0,0,0, .1) 20%), url(../images/globe-2.jpg) no-repeat; background-position: center; background-size: cover">
+            style="background: linear-gradient(10deg, #1c1c21 4%, rgba(0,0,0, .85) 10%, rgba(0,0,0, .1) 35%), url(../images/philosophy.jpg) no-repeat; background-position: center; background-size: cover">
             <!-- <div class="hero-content container">
-            <h1>Investing and Advicing in the Emerging Markets</h1>
+            <h1>Advising companies worldwide</h1>
         </div> -->
         </div>
-
         <!-- features area start -->
         <div id="features" class="wrap-bg " style="padding-bottom: 150px">
 
@@ -141,7 +194,7 @@
                 <!-- .row -->
                 <div class="row">
                     <div class="col-xs-12 mbt30 mt30" style="margin-bottom: 60px">
-                        <h2 style="padding: 30px 0 0">Nos enfocamos en Mercados Emergentes</h2>
+                        <h2 style="padding: 30px 0 0">Nuestra Filosofía</h2>
                         <div style="background: #024366; width: 70px; height: 6px;"></div>
                     </div>
                 </div>
@@ -151,50 +204,37 @@
                     <div class="col-xs-12 mbt30" style="margin-bottom: 60px">
                         <!-- 1 -->
 
-                        <p class="description">Global Income Fund está representado por Winterbotham Trust Company Ltd.
-                            como su Agente Registrado y Oficina Registrada, bajo el número de registro 201472-W, con
-                            oficinas ubicadas en The Winterbotham Place, P.O. Box N-3026, calles Marlborough y Queen,
-                            Nassau, New Providence, Bahamas.</p>
+                        <!-- uses solid style -->
 
-                        <p class="description">Sus principales socios bancarios son Morgan Stanley New York y REYL
-                            Intesa Sanpaolo, entre otros.</p>
+                        <p class="description">Global Income Fund opera con una filosofía basada en la innovación, la
+                            prudencia y una visión de futuro. Nuestra estrategia se apoya en una investigación y un
+                            análisis exhaustivos de enfoque bottom-up, con un fuerte énfasis en la generación de
+                            retornos sostenibles, la minimización del impacto ambiental y el fomento de relaciones
+                            positivas con las comunidades.</p>
 
-                        <p class="description">Global Income Fund fue establecido en 2018 por Ricardo Beroiza como un
-                            vehículo de inversión con un enfoque principal en Mercados Emergentes. Se beneficia de la
-                            amplia experiencia y del historial de más de 40 años de su empresa hermana, Magnus Overseas
-                            Limited, así como de la sólida presencia local de esta última en Argentina, Chile y Uruguay.
-                        </p>
+                        <p class="description">El Fondo mantiene un enfoque regional claro, lo que nos permite obtener
+                            información valiosa sobre las tendencias locales y las oportunidades emergentes.</p>
 
-                        <p class="description">Los Directores y Funcionarios del Fondo son:</p>
+                        <p class="description">Nuestro enfoque de inversión se construye sobre múltiples pilares y sigue
+                            los criterios que se detallan a continuación:</p>
 
-                        <ul style="padding: 20px 100px 40px ">
-                            <li style="font-size: 22px; list-style: disc;">Ricardo Alejandro Beroiza Contreras
-                                (Director)</li>
-                            <li style="font-size: 22px; list-style: disc;">Gustavo José Coll Pisani (Director)</li>
-                            <li style="font-size: 22px; list-style: disc;">Evelyne Maja Kränzlin Domínguez (Directora)
-                            </li>
-                            <li style="font-size: 22px; list-style: disc;">WNS Limited (Funcionario – Secretario)</li>
+                        <ul style="padding: 20px 100px 40px 50px;">
+                            <li style="font-size: 22px; list-style: disc;">Definimos una inversión sólida como aquella
+                                que contribuye a construir mejores empresas, generando retornos significativos, apoyando
+                                el crecimiento sostenible, fortaleciendo la resiliencia climática y consolidando los
+                                vínculos con la comunidad.</li>
+                            <li style="font-size: 22px; list-style: disc;">Una oportunidad de inversión exitosa debe
+                                ofrecer una propuesta de valor convincente, basada en un conocimiento profundo del
+                                negocio y en un camino claro hacia la innovación.</li>
+                            <li style="font-size: 22px; list-style: disc;">La presencia local es esencial para nuestro
+                                éxito. Nuestra experiencia en el terreno, combinada con la fortaleza de un equipo
+                                diverso e inclusivo, nos brinda una ventaja significativa para identificar y gestionar
+                                inversiones.</li>
                         </ul>
 
-                        <p class="description">La presencia local de Magnus Overseas Limited en tres países clave de
-                            América Latina —Uruguay, Chile y Argentina— brinda a Global Income Fund acceso a una amplia
-                            gama de oportunidades potenciales de inversión en toda la región, respaldadas por un equipo
-                            profesional altamente capacitado, con un profundo conocimiento y experiencia sectorial.</p>
-
-                        <p class="description">Una parte significativa de los recursos de Global Income Fund ha sido
-                            asignada a inversiones de largo plazo, mientras que el saldo restante se destina a
-                            operaciones de trading en acciones y bonos.</p>
-
-                        <p class="description">En abril de 2021, Global Income Fund adquirió una participación del 23,3
-                            % en South American Energy LLP, una empresa británica que controla Edenor S.A. Argentina, la
-                            mayor compañía de distribución de energía de América Latina.</p>
-
-                        <p class="description">La estructura legal del fondo es la siguiente:</p>
-
-                        <div style="max-width: 90%; margin: 30px auto; text-align: center;">
-                            <img src="../images/organigrama.png" alt="" style="margin: auto; width: 80%;">
-                        </div>
-
+                        <p class="description">Nuestra filosofía de inversión guía la forma en que opera nuestro equipo
+                            y refleja los valores que representamos. Creemos que esta filosofía es fundamental para
+                            lograr resultados de inversión exitosos y sostenibles en el largo plazo.</p>
                     </div>
                 </div>
 
@@ -204,9 +244,9 @@
             <!-- features area end -->
         </div>
 
-    </main>
 
-    <footer id="footer" class="footer-dark wrap-bg-secondary" style="position: relative; z-index: 9999;">
+    </main>
+    <footer id="footer" class="footer-dark wrap-bg-secondary">
         <div class="footer-top">
             <!-- .container -->
             <div class="container text-center" style="padding-top: 15px; padding-bottom: 5px">
@@ -252,6 +292,6 @@
     <script src='../js/owl.carousel.min.js'></script>
 </body>
 
-<!-- Mirrored from www.globalincomefundltd.com/es/nosotros by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Dec 2025 19:40:51 GMT -->
+<!-- Mirrored from www.globalincomefundltd.com/es/filosofia by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Dec 2025 19:42:09 GMT -->
 
 </html>
